@@ -67,6 +67,30 @@ The place of the local group in the cosmic web.
 
 \section{Finding the cosmic web in numerical simulations}
 
+We use a web finding algorithm based on the tidal tensor computed from
+the gravitational potential field computed over a grid. We define the
+tensor as:
+
+\begin{equation}
+T_{ij} = \frac{\partial^2\phi}{\partial r_{i}\partial r_{j}}, 
+\end{equation}
+%
+where the index $i=1,2,3$ refers to the three spatial directions in
+euclidian space and $\phi$ is a normalized gravitational poterntial
+that satisfies the following Poisson equation $\nabla^2 \phi=\delta$,
+where $\delta$ is the matter overdensity.
+
+The algorithms finds the eigenvalues of this tensor, 
+$\lambda_1>\lambda_2>\lambda_3$, and use them to classify each cell in
+the grid as a peak, filament, sheet or void if three, two, one or none
+of the eigenvectors is larger than a given threshold $\lambda_{\rm
+  th}$. Each eigenvalue has associated to it an eigenvector ($e_{1}$,
+$e_{2}$, $e_{3}$) which are the natural basis to define local
+directions in the web.
+
+
+
+
 \section{Local Groups in cosmological simulations}
 
 \section{Halo alignments with the cosmic web}
@@ -75,7 +99,7 @@ The place of the local group in the cosmic web.
 
 \section{Conclusions}
 
-Here we have summarized results on the expected place of the Local
+Here, we have summarized results on the expected place of the Local
 Group in the cosmic web. Our results are based on cosmological N-body
 simulations and the tidal web method to define the cosmic web. We
 constructed different Local Groups samples from dark matter halo pairs
@@ -92,7 +116,7 @@ We also found a tight aligment of the pairs with the cosmic web. The
 vector joining the two LG halos is aligned with the lowest eigenvector
 and antialignned with the highest eigenvector. This means that pairs
 are aligned along the filaments and lie along sheets. These alignments
-are tighter as the pairs' kinmeatic conditions are closer to
+are tighter as the pairs' kinematic conditions are closer to
 observations.
 
 
