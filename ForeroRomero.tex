@@ -1,0 +1,144 @@
+% iaus2esa.tex -- sample pages for Proceedings IAU Symposium document class
+% (based on v1.0 cca2esam.tex)
+% v1.04 released 17 May 2004 by TechBooks
+%% small changes and additions made by KAvdH/IAU 4 June 2004
+% Copyright (2004) International Astronomical Union
+
+\NeedsTeXFormat{LaTeX2e}
+
+\documentclass{iau}
+\usepackage{graphicx}
+
+\newcommand{\hMpc}{{\ifmmode{h^{-1}{\rm Mpc}}\else{$h^{-1}$Mpc }\fi}}
+\newcommand{\hGpc}{{\ifmmode{h^{-1}{\rm Gpc}}\else{$h^{-1}$Gpc }\fi}}
+\newcommand{\hmpc}{{\ifmmode{h^{-1}{\rm Mpc}}\else{$h^{-1}$Mpc }\fi}}
+\newcommand{\hkpc}{{\ifmmode{h^{-1}{\rm kpc}}\else{$h^{-1}$kpc }\fi}}
+\newcommand{\hMsun}{{\ifmmode{h^{-1}{\rm
+{M_{\odot}}}}\else{$h^{-1}{\rm{M_{\odot}}}$}\fi}}
+\newcommand{\hmsun}{{\ifmmode{h^{-1}{\rm
+{M_{\odot}}}}\else{$h^{-1}{\rm{M_{\odot}}}$}\fi}}
+\newcommand{\Msun}{{\ifmmode{{\rm {M_{\odot}}}}\else{${\rm{M_{\odot}}}$}\fi}}
+\newcommand{\msun}{{\ifmmode{{\rm {M_{\odot}}}}\else{${\rm{M_{\odot}}}$}\fi}}
+\newcommand{\lya}{{Lyman$\alpha$~}}
+\newcommand{\apj}{ApJ}
+\newcommand{\apjs}{ApJS}
+\newcommand{\apjl}{ApJL}
+\newcommand{\aj}{AJ}
+\newcommand{\mnras}{MNRAS}
+\newcommand{\mnrassub}{MNRAS accepted}
+\newcommand{\aap}{A\&A}
+\newcommand{\aaps}{A\&AS}
+\newcommand{\araa}{ARA\&A}
+\newcommand{\nat}{Nature}
+\newcommand{\physrep}{PhR}
+\newcommand{\pasp}{PASP}
+\newcommand{\pasj}{PASJ} 
+
+\title[The Local Group in the Cosmic Web] %% give here short title %%
+{The place of the Local Group in the cosmic web}
+
+\author[Jaime E. Forero-Romero]   %% give here short author list %%
+{Jaime E. Forero-Romero$^1$}
+\affiliation{$^1$Departamento de F\'isica, Universidad de los Andes, \\ Cra. 1 No. 18A-10, Edificio Ip \\Bogot\'a, Colombia \\ email: {\tt je.forero@uniandes.edu.co} \\[\affilskip]}
+
+\pubyear{2014}
+\volume{308}  %% insert here IAU Symposium No.
+\pagerange{119--126}
+% \date{?? and in revised form ??}
+\setcounter{page}{1}
+\jname{The Zeldovich Universe: Genesis and Growth of the Cosmic Web}
+\editors{R. van de Weygaert, S. Shandarin, E. Saar, J. Einasto, eds.}
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The place of the local group in the cosmic web.
+\keywords{cosmology: large-scale structure of universe; cosmology:dark matter; cosmology: simulations;  Galaxy: formation}
+%% add here a maximum of 10 keywords, to be taken form the file <Keywords.txt>
+\end{abstract}
+
+\firstsection % if your document starts with a section,
+              % remove some space above using this command.
+\section{Introduction}
+\cite[Forero-Romero et al. (2009)]{Tweb}
+
+
+
+\section{Finding the cosmic web in numerical simulations}
+
+\section{Local Groups in cosmological simulations}
+
+\section{Halo alignments with the cosmic web}
+
+\section{The place of the Local Group in the Cosmic Web}
+
+\section{Conclusions}
+
+Here we have summarized results on the expected place of the Local
+Group in the cosmic web. Our results are based on cosmological N-body
+simulations and the tidal web method to define the cosmic web. We
+constructed different Local Groups samples from dark matter halo pairs
+that fulfill observational kinematic constraints. 
+
+We found a tight correlation of the LG pairs' total mass with the scalar
+web properties (overdensity, ellipticity and prolateness). For the LG
+pairs closer to the observational constraints their total mass is in
+the range $1\times 10^{12}\Msun < M_{LG} < 4\times 10^{12}\Msun$
+preferred overdensity value is constrained to be in the range
+$0<\delta <1$. 
+
+We also found a tight aligment of the pairs with the cosmic web. The
+vector joining the two LG halos is aligned with the lowest eigenvector
+and antialignned with the highest eigenvector. This means that pairs
+are aligned along the filaments and lie along sheets. These alignments
+are tighter as the pairs' kinmeatic conditions are closer to
+observations.
+
+
+ 
+
+\begin{thebibliography}{}
+
+
+\bibitem[{{Forero-Romero} {et~al.}(2014){Forero-Romero}, {Contreras}, \&
+{Padilla}}]{ForeroRomero2014}
+{Forero-Romero}, J.~E., {Contreras}, S., \& {Padilla}, N. 2014, \mnras, 443,
+1090
+
+\bibitem[{{Forero-Romero} {et~al.}(2013){Forero-Romero}, {Hoffman},
+{Bustamante}, {Gottl{\"o}ber}, \& {Yepes}}]{2013ApJ...767L...5F}
+{Forero-Romero}, J.~E., {Hoffman}, Y., {Bustamante}, S., {Gottl{\"o}ber}, S.,
+\& {Yepes}, G. 2013, \apjl, 767, L5
+
+\bibitem[{{Forero-Romero} {et~al.}(2009){Forero-Romero}, {Hoffman},
+{Gottl{\"o}ber}, {Klypin}, \& {Yepes}}]{Tweb}
+{Forero-Romero}, J.~E., {Hoffman}, Y., {Gottl{\"o}ber}, S., {Klypin}, A., \&
+{Yepes}, G. 2009, \mnras, 396, 1815
+
+\bibitem[{{Forero-Romero} {et~al.}(2011){Forero-Romero}, {Hoffman}, {Yepes},
+{Gottl{\"o}ber}, {Piontek}, {Klypin}, \& {Steinmetz}}]{ForeroRomero2011}
+{Forero-Romero}, J.~E., {Hoffman}, Y., {Yepes}, G., {Gottl{\"o}ber}, S.,
+{Piontek}, R., {Klypin}, A., \& {Steinmetz}, M. 2011, \mnras, 417, 1434
+
+\bibitem[{{Gonz{\'a}lez} {et~al.}(2013){Gonz{\'a}lez}, {Kravtsov}, \&
+{Gnedin}}]{sat}
+{Gonz{\'a}lez}, R.~E., {Kravtsov}, A.~V., \& {Gnedin}, N.~Y. 2013, \apj, 770,
+96
+
+\bibitem[{{Gonz{\'a}lez} {et~al.}(2014){Gonz{\'a}lez}, {Kravtsov}, \&
+{Gnedin}}]{lganalogues}
+---. 2014, ApJ in press, http://arxiv.org/abs/1312.2587
+
+\bibitem[{{Gonz{\'a}lez} \& {Padilla}(2010)}]{2010MNRAS.407.1449G}
+{Gonz{\'a}lez}, R.~E., \& {Padilla}, N.~D. 2010, \mnras, 407, 1449
+
+
+\bibitem[{{Hoffman} et~al.}]{Vweb} {Hoffman} Y., {Metuki} O., {Yepes}
+  G., {Gottl{\"o}ber} S., {Forero-Romero} J.~E., {Libeskind} N.~I.,
+  {Knebe} A., 2012, \mnras, 425, 2049 
+
+\end{thebibliography}
+
+
+\end{document}
