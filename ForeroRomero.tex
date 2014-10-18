@@ -37,9 +37,22 @@
 \title[The Local Group in the Cosmic Web] %% give here short title %%
 {The place of the Local Group in the cosmic web}
 
-\author[Jaime E. Forero-Romero]   %% give here short author list %%
-{Jaime E. Forero-Romero$^1$}
-\affiliation{$^1$Departamento de F\'isica, Universidad de los Andes, \\ Cra. 1 No. 18A-10, Edificio Ip \\Bogot\'a, Colombia \\ email: {\tt je.forero@uniandes.edu.co} \\[\affilskip]}
+\author[Jaime E. Forero-Romero \& Roberto Gonz\'alez]   %% give here
+%% short author list %% 
+{Jaime E. Forero-Romero$^1$ \and Roberto Gonz\'alez$^{2,3}$}
+\affiliation{
+  
+  $^1$Departamento de F\'isica, Universidad de los Andes,
+  \\ Cra. 1 No. 18A-10, Edificio Ip \\Bogot\'a, Colombia \\ email:
+     {\tt je.forero@uniandes.edu.co} \\[\affilskip]
+
+     $^2$ Instituto de Astrof\'{i}sica, Pontificia Universidad
+     Cat\'olica de Chile \\ Av. Vicu\~na Mackenna 4860 \\ Santiago, Chile\\[\affilskip]
+ 
+    $^3$ Centro de Astro-Ingenier\'{i}a, Pontificia Universidad
+     Cat\'olica de Chile\\ Av. Vicu\~na Mackenna 4860 \\Santiago, Chile\\
+     email: {\tt regonzar@astro.puc.cl}\\[\affilskip]
+}
 
 \pubyear{2014}
 \volume{308}  %% insert here IAU Symposium No.
@@ -53,30 +66,56 @@
 \maketitle
 
 \begin{abstract}
-We use the Bolshoi Simulation, a Dark Matter (DM) only cosmological
-simulation, to find the most probable place of the
-Local Group (LG) in the cosmic web. We use pairs of halos with isolation
-and kinematic properties consistent with observations as our LG
-simulacra. The cosmic web is defined using a tidal tensor approach. We
-find that the LG's prefered location is regions with a DM overdensity
-in the range $0<\delta<1$, which makes filaments and sheets the
-preferred environment. We find that there is a strong alignment
-between the LG and the cosmic web. The orbital angular momentum is
-preferetntially perpendicular to the smallest tidal eigenvector. The
-vector connecting the two halos is strongly aligned along the
-the smallest tidal eigenvector and perpendicular to the
-largest tidal eigenvector; the pair lies and moves along
-filaments and sheets. We do not find any evidence for an alignment
-between the spin of each halo in the pair and the cosmic web. 
+We use the Bolshoi Simulation to find the most probable location of the
+Local Group (LG) in the cosmic web. Our LG simulacra are pairs of
+halos with isolation and kinematic properties consistent with
+observations. The cosmic web is defined using a tidal tensor
+approach. We find that the LG's prefered location is regions with a DM
+overdensity close to the cosmic average, which makes filaments and
+sheets the preferred environment. We find that there is a strong
+alignment between the LG and the cosmic web. The orbital angular
+momentum is preferetntially perpendicular to the smallest tidal
+eigenvector. The vector connecting the two halos is strongly aligned
+along the the smallest tidal eigenvector and perpendicular to the
+largest tidal eigenvector; the pair lies and moves along filaments and
+sheets. We do not find any evidence for an alignment between the spin
+of each halo in the pair and the cosmic web.  
 
 \keywords{cosmology: large-scale structure of universe; cosmology:dark matter; cosmology: simulations;  Galaxy: formation}
-%% add here a maximum of 10 keywords, to be taken form the file <Keywords.txt>
 \end{abstract}
 
 \firstsection % if your document starts with a section,
               % remove some space above using this command.
 \section{Introduction}
 
+The kinematic configuration of the Local Group (LG) is not common in
+the cosmological context provided by the $\Lambda$ Cold Dark Matter
+(CDM) model. 
+
+The LG is dominated by the presence of two spiral
+galaxies, the Milky Way (MW) and M31. It is relatively isolated of
+other massive structures; the next most luminous galaxy is 10
+times less massive than M31, with several dwarf galaxies around a
+sphere of $\sim 3$Mpc and the closest massive galaxy cluster, the
+Virgo Cluster, is 16.5 Mpc away. The velocity vector of M31 has a low tangential
+component and is consistent with a head-on collision toward the MW,
+and the velocity dispersion of nearby galaxies up to $\sim 8$ Mpc is
+low. 
+
+
+These features make LG analogues uncommon in numerical
+simulations. Only about of $2\%$ of MW-sized halos reside in a pair
+similar to the MW-M31 in a similar environment. Additionally, the
+strong alignments of dwarf satellites of the MW and M31 in the form of
+polar and planar structures calls asks for a detailed explanation of
+the large scale structure environment that can breed such halos. 
+
+
+Here we present results of the study of the large scale environment of
+LG analogues in the context of $\Lambda$CDM. We use a cosmological
+N-body simulation (Bolshoi) to infer the most probable place of the LG
+in the cosmic web and its possible alignments. A detailed description
+of these results can found in \cite{lgweb}.
 
 
 
@@ -105,6 +144,30 @@ directions in the web. Details describing the algorithm can be found
 in \cite[Forero-Romero et al. (2009)]{Tweb}.
 
 
+We use the Bolshoi simulation of $\Lambda$CDM cosmology: $\Omega_{\rm
+  m}=1-\Omega_{\Lambda}=0.27$, $H_0=70\,\rm km/s/Mpc$,
+$\sigma_8=0.82$, $n_s=0.95$ (\cite{2011ApJ...740..102K}), compatible
+with the constraints from the WMAP satellite. The simulation followed the evolution of dark
+matter in a $250 \hmpc$ box with spatial resolution of $\approx
+1h^{-1}$~kpc and mass resolution of $m_{\rm p}=1.35\times 10^8\ \rm
+M_{\odot}$. Halos are identified with the Bound Density Maxima (BDM) algorithm
+(\cite{1997astro.ph.12217K}). The data for the halos and the cosmic
+web are available through a database located at
+{\tt http://www.cosmosim.org/}. A detailed description of the database
+structure was presented by \cite{Riebe2013}. 
+
+The data of the BDM halos and the Tweb is publicly available through
+a database located at 
+
+
+
+ The BDM algorithm is  a spherical
+overdensity halo finding algorithm and is designed to identify both
+host halos and subhalos. 
+
+
+
+
 
 
 \section{Local Groups in cosmological simulations}
@@ -123,51 +186,97 @@ member can be found within $5$Mpc.
   $M_{200c}>1.5\times 10^{14}\Msun$ within $12$Mpc.
 \end{itemize}
 
-With the selection criteria we select close to $6\times 10^3$ to build
-our main pair sample. From it we select to restricted samples
-according to the tolerance in kinematic constraints. These samples 
-are named $2\sigma$ and $3\sigma$, and correspond, respectiveley to
+With these selection criteria we select close to $6\times 10^3$ to build
+a General Sample (GS). From the GS we select two sub-samples
+according to the tolerance in kinematic constraints. These sub-samples 
+are named $2\sigma$ and $3\sigma$, they correspond to a tolerance of
 two and three times the observational errors in the radial vecloty,
 tangential velocity and separation. The number of paris in each sample
-is $46$ and $120$. 
-
+is $46$ and $120$.  
 
 \section{The place of the Local Group in the Cosmic Web}
 
-\begin{figure}[b]
-% \vspace*{-2.0 cm}
+\begin{figure}[t]
 \begin{center}
- \includegraphics[width=3.8in]{histogram_mass_distro.eps} 
-% \vspace*{-1.0 cm}
- \caption{Path of pre-solar grains from their stellar sources to the laboratory.}
-   \label{fig1}
+ \includegraphics[width=3.5in]{histogram_mass_distro.eps} 
+ \caption{Number of pairs in a preferred environment as a function of
+   the LG total mass. The lines show the results for the General
+   Sample, the vertical bands show the mass interval spanned by the
+   $2\sigma$ and $3\sigma$ samples. The preferred environments are
+   filaments and sheets.}
+   \label{fig:environment}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}[t]
+\begin{center}
+ \includegraphics[width=3.5in]{median_mass_overdensity.eps} 
+ \caption{Dark matter overdensity as a function of the LG total
+   mass. The shaded region show the results for the General
+   Sample. There is a strong correlation where more massive pairs sit
+   in  denser regions. The symbols represent the $2\sigma$ and
+   $3\sigma$ samples. The preferred overdensity is in the interval
+   $0<\delta<2$.}
+   \label{fig:overdensity}
+\end{center}
+\end{figure}
+
+\begin{figure}[t]
+\begin{center}
+ \includegraphics[width=3.5in]{alignments_e3_r_all_environments.eps} 
+ \caption{Cumulative distribution for $\mu=|\hat{e}_{3}\cdot\hat{r}|$
+   showing the alignment of the vector joining the two halos in the LG
+ with the smallest tidal eigenvector. The shaded regions represents
+ the expected result from a distribution of vectors randomly placed in
+ space and the corresponging $5\%$ and $75\%$ percentiles for
+ distributions with the same number of points as the $2\sigma$ sample.}
+   \label{fig:alignment_r}
 \end{center}
 \end{figure}
 
 \begin{figure}[b]
-% \vspace*{-2.0 cm}
 \begin{center}
- \includegraphics[width=3.8in]{median_mass_overdensity.eps} 
-% \vspace*{-1.0 cm}
- \caption{Path of pre-solar grains from their stellar sources to the laboratory.}
-   \label{fig1}
+ \includegraphics[width=3.5in]{alignments_e3_n_all_environments.eps} 
+ \caption{Same as Figure \ref{fig:alignment_r} for the vector $\hat
+   n$ that indicates the direction of the orbital angular momentum of
+   the pair.}
+   \label{fig:alignment_n}
 \end{center}
 \end{figure}
 
-\begin{figure}[b]
-% \vspace*{-2.0 cm}
-\begin{center}
- \includegraphics[width=2.6in]{alignments_e1_r_all_environments.eps} 
- \includegraphics[width=2.6in]{alignments_e1_n_all_environments.eps} 
- \includegraphics[width=2.6in]{alignments_e2_r_all_environments.eps} 
- \includegraphics[width=2.6in]{alignments_e2_n_all_environments.eps} 
- \includegraphics[width=2.6in]{alignments_e3_r_all_environments.eps} 
- \includegraphics[width=2.6in]{alignments_e3_n_all_environments.eps} 
-% \vspace*{-1.0 cm}
- \caption{Path of pre-solar grains from their stellar sources to the laboratory.}
-   \label{fig1}
-\end{center}
-\end{figure}
+
+We find that the pairs in the general sample are located across
+different environments with a strong trend on the total pair
+mass. The correlation of halo mass and their environment is a
+well known result \cite{1998ApJ...500...14L}.
+
+
+
+Figure \ref{fig:environment} summarizes this correlation between
+environment an total pair mass. Each line represents the mass
+distribution of pairs in the four different environments. High mass
+pairs are mostly located in peaks and filaments while less massive
+ones in voids and sheets.  The shaded regions represent the $68\%$
+confidence intervals of the mass distributions of $2\sigma$ and
+$3\sigma$ samples. By and large the LGs in the $2\sigma$ and $3\sigma$ samples are
+located in filaments and sheets. In both samples, $\sim 50\%$ of the
+pairs can be found in filaments while $\sim 40\%$ are in sheets. 
+
+We can also characterize the preferred place of the pair samples in terms of the
+web overdensity.  Figure \ref{fig:overdensity} shows the dependency of these three
+characteristics on the total pair mass for the different samples. The
+GS and its uncertainties are represeted by the shaded region. The
+symbols represents the results for the $2\sigma$ and $3\sigma$ samples.   
+We see that the range of values for the $2\sigma$ and $3\sigma$
+samples are completely expected from the mass constraint alone. Higher
+mass pairs are located in high density regions. The $2\sigma$ and
+$3\sigma$ samples have narrower mass range and are located within a
+narrower range of overdensities $0.0<\delta<2.0$ peaking at $\delta \sim 1$. 
+
+
+
 
 
 
@@ -178,13 +287,14 @@ depend on environment through the local DM density. Whether they are
 located in sheet or a filament is irrelevant as long the local density
 is the same. 
 
-However there is long story of measuring aligments (shape, spin,
+However there is long history of alignment measurement (shape, spin,
 peculiar velocities) of individual halos with the cosmic web. In a
 recent paper \cite{ForeroRomero2014} presented a study
-using the same simulation we have at hand together with the same
-definition for the cosmic web we use here. They also presented a comprehensive
-review of all the previous results from simulations that also
-inspected the alignment of halo shape and spin. 
+using the same simulation and cosmic web definition we use here.
+They also presented a comprehensive review of all the previous results
+from simulations that also inspected the alignment of halo shape and
+spin. We refer the reader to the paper for a complete list of
+references. 
 
 The main results from these studies is that shape presents the
 strongest alignment signal. In this case the DM halo major axis lies
@@ -197,40 +307,47 @@ threshold. The peculiar velocities show a strong alingment signal
 along $e_{3}$ for all masses.
 
 
-In our case we test for the alignment of the orbital angular momentum
-of the pair, the vector connecting the two halos and the spin of each
-halo. The results are summarized in the Figure XXX
+In our case we test for the alignment of the vector connecting the two
+halos ($\hat{r}$), the orbital angular momentum of the pair
+($\hat{n}$) and the spin of each
+halo. We quantify the alignment using the absolute value of the cosine of
+the angle between two vectors $\mu=|\hat{e}_i \cdot \hat{n}|$ or
+$\mu=|\hat{e}_i\cdot \hat{r}|$, where $i=1,2,3$.  
 
-
-\section{Overview}
-
-
-
-
-
+The results for the first two alignments are summarized in the Figure
+\ref{fig:alignment_r} and \ref{fig:alignment_n}.  We find that the
+vector $\hat{r}$ is strongly aligned with $\hat{e}_{3}$, along
+filaments and sheets. This trend is already present in the GS and gets
+stronger for the $2\sigma$ and $3\sigma$ samples. Concerning the
+vector $\hat{n}$ we have a strong anti-correlation  with $\hat{e}_3$,
+again this tendency is stronger for the $2\sigma$ and $3\sigma$
+samples. 
 
 
 \section{Conclusions}
 
-Here, we have summarized results on the expected place of the Local
+Here, we hava presented results on the expected place of the Local
 Group in the cosmic web. Our results are based on cosmological N-body
 simulations and the tidal web method to define the cosmic web. We
 constructed different Local Groups samples from dark matter halo pairs
 that fulfill observational kinematic constraints. 
 
-We found a tight correlation of the LG pairs' total mass with the scalar
-web properties (overdensity, ellipticity and prolateness). For the LG
-pairs closer to the observational constraints their total mass is in
-the range $1\times 10^{12}\Msun < M_{LG} < 4\times 10^{12}\Msun$
-preferred overdensity value is constrained to be in the range
-$0<\delta <1$. 
+We found a tight correlation of the LG pairs' total mass with the
+local overdensity. For the LG pairs closer to the observational
+constraints their total mass is in the range $1\times 10^{12}\Msun <
+M_{LG} < 4\times 10^{12}\Msun$ preferred overdensity value is
+constrained to be in the range $0<\delta <2$. 
 
-We also found a tight aligment of the pairs with the cosmic web. The
-vector joining the two LG halos is aligned with the lowest eigenvector
-and antialignned with the highest eigenvector. This means that pairs
-are aligned along the filaments and lie along sheets. These alignments
-are tighter as the pairs' kinematic conditions are closer to
-observations.
+We also found a strong alignments of the pairs with the cosmic web. The
+strongest alignments is present for the vector joining the two LG
+halos. This vector is aligned with the lowest eigenvector and
+anti-aligned with the highest eigenvector. This trend is already
+present in wide sample of pairs and becomes stronger as the kinematic
+constraints are closer to their observed values. 
+
+
+
+
 
 
  
@@ -238,34 +355,34 @@ observations.
 \begin{thebibliography}{}
 
 
-\bibitem[{{Forero-Romero} {et~al.}(2014){Forero-Romero}, {Contreras}, \&
-{Padilla}}]{ForeroRomero2014}
+\bibitem[{{Forero-Romero \& {Gonz{\'a}lez} (2014)}}]{lgweb}
+{{Forero-Romero}, J.~E., \& {Gonz{\'a}lez}, R.~E.}, ApJ submitted,
+ArXiv:1408.3166 
+
+\bibitem[{{Forero-Romero} {et~al.}(2014)}]{ForeroRomero2014}
 {Forero-Romero}, J.~E., {Contreras}, S., \& {Padilla}, N. 2014, \mnras, 443,
 1090
 
-\bibitem[{{Forero-Romero} {et~al.}(2013){Forero-Romero}, {Hoffman},
-{Bustamante}, {Gottl{\"o}ber}, \& {Yepes}}]{2013ApJ...767L...5F}
+\bibitem[{{Forero-Romero} {et~al.}(2013)}]{2013ApJ...767L...5F}
 {Forero-Romero}, J.~E., {Hoffman}, Y., {Bustamante}, S., {Gottl{\"o}ber}, S.,
 \& {Yepes}, G. 2013, \apjl, 767, L5
 
-\bibitem[{{Forero-Romero} {et~al.}(2009){Forero-Romero}, {Hoffman},
-{Gottl{\"o}ber}, {Klypin}, \& {Yepes}}]{Tweb}
+\bibitem[{{Forero-Romero} {et~al.}(2009)}]{Tweb}
 {Forero-Romero}, J.~E., {Hoffman}, Y., {Gottl{\"o}ber}, S., {Klypin}, A., \&
 {Yepes}, G. 2009, \mnras, 396, 1815
 
-\bibitem[{{Forero-Romero} {et~al.}(2011){Forero-Romero}, {Hoffman}, {Yepes},
-{Gottl{\"o}ber}, {Piontek}, {Klypin}, \& {Steinmetz}}]{ForeroRomero2011}
+\bibitem[{{Forero-Romero} {et~al.}}]{ForeroRomero2011}
 {Forero-Romero}, J.~E., {Hoffman}, Y., {Yepes}, G., {Gottl{\"o}ber}, S.,
 {Piontek}, R., {Klypin}, A., \& {Steinmetz}, M. 2011, \mnras, 417, 1434
 
-\bibitem[{{Gonz{\'a}lez} {et~al.}(2013){Gonz{\'a}lez}, {Kravtsov}, \&
-{Gnedin}}]{sat}
+
+\bibitem[{{Gonz{\'a}lez} {et~al.}(2013)}]{sat}
 {Gonz{\'a}lez}, R.~E., {Kravtsov}, A.~V., \& {Gnedin}, N.~Y. 2013, \apj, 770,
 96
 
-\bibitem[{{Gonz{\'a}lez} {et~al.}(2014){Gonz{\'a}lez}, {Kravtsov}, \&
-{Gnedin}}]{lganalogues}
----. 2014, ApJ in press, http://arxiv.org/abs/1312.2587
+\bibitem[{{Gonz{\'a}lez} {et~al.}(2014)}]{lganalogues}
+---, 2014, \apj, 793, 91
+
 
 \bibitem[{{Gonz{\'a}lez} \& {Padilla}(2010)}]{2010MNRAS.407.1449G}
 {Gonz{\'a}lez}, R.~E., \& {Padilla}, N.~D. 2010, \mnras, 407, 1449
@@ -274,6 +391,27 @@ observations.
 \bibitem[{{Hoffman} et~al.}]{Vweb} {Hoffman} Y., {Metuki} O., {Yepes}
   G., {Gottl{\"o}ber} S., {Forero-Romero} J.~E., {Libeskind} N.~I.,
   {Knebe} A., 2012, \mnras, 425, 2049 
+
+\bibitem[{{Klypin} {et~al.}(2011)}]{2011ApJ...740..102K}
+{Klypin}, A.~A., {Trujillo-Gomez}, S., \& {Primack}, J. 2011, \apj,
+740, 102
+
+\bibitem[{{Klypin} \& {Holtzman}(1997)}]{1997astro.ph.12217K}
+{Klypin}, A., \& {Holtzman}, J. 1997, ArXiv:9712217
+
+\bibitem[{{Lee} \& {Shandarin}(1998)}]{1998ApJ...500...14L}
+{Lee}, J., \& {Shandarin}, S.~F. 1998, \apj, 500, 14
+
+\bibitem[{{Libeskind} {et~al.}(2013)}]{Libeskind2013}
+{Libeskind}, N.~I., {Hoffman}, Y., {Forero-Romero}, J., {Gottl{\"o}ber}, S.,
+  {Knebe}, A., {Steinmetz}, M., \& {Klypin}, A. 2013, \mnras, 428, 2489
+
+\bibitem[{{Riebe} {et~al.}(2013)}]{Riebe2013}
+{Riebe}, K., {Partl}, A.~M., {Enke}, H., {Forero-Romero}, J., {Gottl{\"o}ber},
+  S., {Klypin}, A., {Lemson}, G., {Prada}, F., {Primack}, J.~R., {Steinmetz},
+  M., \& {Turchaninov}, V. 2013, Astronomische Nachrichten, 334, 691
+
+
 
 \end{thebibliography}
 
