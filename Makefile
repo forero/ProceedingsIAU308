@@ -17,7 +17,7 @@ clean:
 	rm -f *~
 
 zip:	
-	zip $(MAIN).zip $(MAIN).tex *.eps Makefile iau.cls
+	zip $(MAIN).zip $(MAIN).tex *.eps Makefile Signed_Copyright.pdf $(MAIN).pdf iau.cls
 
 view: 
 	open $(MAIN).pdf &
